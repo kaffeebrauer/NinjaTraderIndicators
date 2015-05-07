@@ -7,6 +7,7 @@
 using System;
 using System.Diagnostics;
 using System.Drawing;
+using NinjaTrader.Indicator;
 using System.Drawing.Drawing2D;
 using System.ComponentModel;
 using System.Xml.Serialization;
@@ -121,6 +122,11 @@ namespace NinjaTrader.MarketAnalyzer
     public partial class Column : ColumnBase
     {
         /// <summary>
+        /// WARNING/NOTE: added this property to compile solution, do not use in real implementation.
+        /// </summary>
+        private Indicator.Indicator _indicator;
+
+        /// <summary>
         /// The Accumulation/Distribution (AD) study attempts to quantify the amount of volume flowing into or out of an instrument by identifying the position of the close of the period in relation to that period�s high/low range.
         /// </summary>
         /// <returns></returns>
@@ -146,6 +152,9 @@ namespace NinjaTrader.Strategy
 {
     public partial class Strategy : StrategyBase
     {
+        /// <summary>
+        /// </summary>
+
         /// <summary>
         /// The Accumulation/Distribution (AD) study attempts to quantify the amount of volume flowing into or out of an instrument by identifying the position of the close of the period in relation to that period�s high/low range.
         /// </summary>
