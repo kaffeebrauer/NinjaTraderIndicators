@@ -153,7 +153,9 @@ namespace NinjaTrader.Strategy
     public partial class Strategy : StrategyBase
     {
         /// <summary>
+        /// WARNING/NOTE: added this property to compile solution, do not use in real implementation.
         /// </summary>
+        private Indicator.Indicator _indicator;
 
         /// <summary>
         /// The Accumulation/Distribution (AD) study attempts to quantify the amount of volume flowing into or out of an instrument by identifying the position of the close of the period in relation to that period�s high/low range.
