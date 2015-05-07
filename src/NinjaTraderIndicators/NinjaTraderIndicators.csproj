@@ -30,13 +30,39 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="NinjaTrader.BarChart">
+      <HintPath>..\packages\NinjaTrader\NinjaTrader.BarChart.dll</HintPath>
+    </Reference>
+    <Reference Include="NinjaTrader.BigTick">
+      <HintPath>..\packages\NinjaTrader\NinjaTrader.BigTick.dll</HintPath>
+    </Reference>
+    <Reference Include="NinjaTrader.Clear">
+      <HintPath>..\packages\NinjaTrader\NinjaTrader.Clear.dll</HintPath>
+    </Reference>
+    <Reference Include="NinjaTrader.Core">
+      <HintPath>..\packages\NinjaTrader\NinjaTrader.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="NinjaTrader.CQG">
+      <HintPath>..\packages\NinjaTrader\NinjaTrader.CQG.dll</HintPath>
+    </Reference>
+    <Reference Include="NinjaTrader.Dtn">
+      <HintPath>..\packages\NinjaTrader\NinjaTrader.Dtn.dll</HintPath>
+    </Reference>
+    <Reference Include="NinjaTrader.ESignal">
+      <HintPath>..\packages\NinjaTrader\NinjaTrader.ESignal.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="WilsonORMapper">
+      <HintPath>..\packages\NinjaTrader\WilsonORMapper.DLL</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Indicators\%40ADL.cs" />
