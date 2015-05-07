@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3C1F1DAA-DD49-4D3C-BE6C-3DB222112C1E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NinjaTraderIndicators</RootNamespace>
+    <AssemblyName>NinjaTraderIndicators</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Indicators\%40ADL.cs" />
+    <Compile Include="Indicators\%40ADX.cs" />
+    <Compile Include="Indicators\%40ADXR.cs" />
+    <Compile Include="Indicators\%40APZ.cs" />
+    <Compile Include="Indicators\%40Aroon.cs" />
+    <Compile Include="Indicators\%40AroonOscillator.cs" />
+    <Compile Include="Indicators\%40ATR.cs" />
+    <Compile Include="Indicators\%40BarTimer.cs" />
+    <Compile Include="Indicators\%40Bollinger.cs" />
+    <Compile Include="Indicators\%40BOP.cs" />
+    <Compile Include="Indicators\%40BuySellPressure.cs" />
+    <Compile Include="Indicators\%40BuySellVolume.cs" />
+    <Compile Include="Indicators\%40CandleStickPattern.cs" />
+    <Compile Include="Indicators\%40CCI.cs" />
+    <Compile Include="Indicators\%40ChaikinMoneyFlow.cs" />
+    <Compile Include="Indicators\%40ChaikinOscillator.cs" />
+    <Compile Include="Indicators\%40ChaikinVolatility.cs" />
+    <Compile Include="Indicators\%40CMO.cs" />
+    <Compile Include="Indicators\%40ConstantLines.cs" />
+    <Compile Include="Indicators\%40CurrentDayOHL.cs" />
+    <Compile Include="Indicators\%40CustomPlotSample.cs" />
+    <Compile Include="Indicators\%40Darvas.cs" />
+    <Compile Include="Indicators\%40DEMA.cs" />
+    <Compile Include="Indicators\%40DM.cs" />
+    <Compile Include="Indicators\%40DMI.cs" />
+    <Compile Include="Indicators\%40DMIndex.cs" />
+    <Compile Include="Indicators\%40DonchianChannel.cs" />
+    <Compile Include="Indicators\%40DoubleStochastics.cs" />
+    <Compile Include="Indicators\%40EaseOfMovement.cs" />
+    <Compile Include="Indicators\%40EMA.cs" />
+    <Compile Include="Indicators\%40FisherTransform.cs" />
+    <Compile Include="Indicators\%40FOSC.cs" />
+    <Compile Include="Indicators\%40HeikenAshi.cs" />
+    <Compile Include="Indicators\%40HMA.cs" />
+    <Compile Include="Indicators\%40Indicator.cs" />
+    <Compile Include="Indicators\%40KAMA.cs" />
+    <Compile Include="Indicators\%40KeltnerChannel.cs" />
+    <Compile Include="Indicators\%40KeyReversalDown.cs" />
+    <Compile Include="Indicators\%40KeyReversalUp.cs" />
+    <Compile Include="Indicators\%40LinReg.cs" />
+    <Compile Include="Indicators\%40LinRegIntercept.cs" />
+    <Compile Include="Indicators\%40LinRegSlope.cs" />
+    <Compile Include="Indicators\%40MACD.cs" />
+    <Compile Include="Indicators\%40MAEnvelopes.cs" />
+    <Compile Include="Indicators\%40MAMA.cs" />
+    <Compile Include="Indicators\%40MAX.cs" />
+    <Compile Include="Indicators\%40MFI.cs" />
+    <Compile Include="Indicators\%40MIN.cs" />
+    <Compile Include="Indicators\%40Momentum.cs" />
+    <Compile Include="Indicators\%40NBarsDown.cs" />
+    <Compile Include="Indicators\%40NBarsUp.cs" />
+    <Compile Include="Indicators\%40OBV.cs" />
+    <Compile Include="Indicators\%40ParabolicSAR.cs" />
+    <Compile Include="Indicators\%40PFE.cs" />
+    <Compile Include="Indicators\%40Pivots.cs" />
+    <Compile Include="Indicators\%40PPO.cs" />
+    <Compile Include="Indicators\%40PriceAlert.cs" />
+    <Compile Include="Indicators\%40PriceOscillator.cs" />
+    <Compile Include="Indicators\%40PriorDayOHLC.cs" />
+    <Compile Include="Indicators\%40Range.cs" />
+    <Compile Include="Indicators\%40RangeCounter.cs" />
+    <Compile Include="Indicators\%40RegressionChannel.cs" />
+    <Compile Include="Indicators\%40RIND.cs" />
+    <Compile Include="Indicators\%40ROC.cs" />
+    <Compile Include="Indicators\%40RSI.cs" />
+    <Compile Include="Indicators\%40RSquared.cs" />
+    <Compile Include="Indicators\%40RSS.cs" />
+    <Compile Include="Indicators\%40RVI.cs" />
+    <Compile Include="Indicators\%40SMA.cs" />
+    <Compile Include="Indicators\%40StdDev.cs" />
+    <Compile Include="Indicators\%40StdError.cs" />
+    <Compile Include="Indicators\%40Stochastics.cs" />
+    <Compile Include="Indicators\%40StochasticsFast.cs" />
+    <Compile Include="Indicators\%40StochRSI.cs" />
+    <Compile Include="Indicators\%40SUM.cs" />
+    <Compile Include="Indicators\%40Swing.cs" />
+    <Compile Include="Indicators\%40T3.cs" />
+    <Compile Include="Indicators\%40TEMA.cs" />
+    <Compile Include="Indicators\%40TickCounter.cs" />
+    <Compile Include="Indicators\%40TMA.cs" />
+    <Compile Include="Indicators\%40TRIX.cs" />
+    <Compile Include="Indicators\%40TSF.cs" />
+    <Compile Include="Indicators\%40TSI.cs" />
+    <Compile Include="Indicators\%40UltimateOscillator.cs" />
+    <Compile Include="Indicators\%40VMA.cs" />
+    <Compile Include="Indicators\%40VOL.cs" />
+    <Compile Include="Indicators\%40VOLMA.cs" />
+    <Compile Include="Indicators\%40VolumeCounter.cs" />
+    <Compile Include="Indicators\%40VolumeOscillator.cs" />
+    <Compile Include="Indicators\%40VolumeProfile.cs" />
+    <Compile Include="Indicators\%40VolumeUpDown.cs" />
+    <Compile Include="Indicators\%40VolumeZones.cs" />
+    <Compile Include="Indicators\%40VROC.cs" />
+    <Compile Include="Indicators\%40VWMA.cs" />
+    <Compile Include="Indicators\%40WilliamsR.cs" />
+    <Compile Include="Indicators\%40WMA.cs" />
+    <Compile Include="Indicators\%40ZigZag.cs" />
+    <Compile Include="Indicators\%40ZLEMA.cs" />
+    <Compile Include="Indicators\UserDefinedMethods.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
